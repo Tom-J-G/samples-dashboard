@@ -10,7 +10,6 @@ export const useSamples = () => {
 
     useEffect(() => {
         getSamples().then(({data}) => {
-            console.log(data.samples)
             setSamples(data.samples)
             setTotal(data.totalHits)
             setLoading(true)

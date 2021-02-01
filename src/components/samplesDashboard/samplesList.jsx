@@ -19,7 +19,6 @@ const SamplesList = ({samples, title}) => {
                         {samples.map((sample, i) => <SamplesItem sample={sample} samplesKey={i} key={i} />)}
                     </>
                 }   
-
             </div>
         </>
     )
