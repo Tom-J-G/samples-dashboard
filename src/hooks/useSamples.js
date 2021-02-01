@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import { getSamples } from '../api/fetchSamples'
 
+//hooks for samples data
 export const useSamples = () => {
     const [samples, setSamples] = useState([])
     const [total, setTotal] = useState(0)

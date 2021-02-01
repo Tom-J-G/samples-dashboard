@@ -20,4 +20,4 @@ function SamplesProvider({children}) {
 
 }
 
-export {SamplesProvider, useSamplesContext}
+export { SamplesProvider, useSamplesContext }

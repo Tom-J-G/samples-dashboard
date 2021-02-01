@@ -10,7 +10,6 @@ const SamplesInformation = () => {
     const otherSamples = getOtherSamples()
 
     return (
-        <>
         <div className="sample-info">
             <div className="amount">
                 <h3>Antibodies Count</h3>
@@ -25,7 +24,6 @@ const SamplesInformation = () => {
                 <div>{otherSamples.length}</div>
             </div>
         </div>
-        </>
     )
 }
 
