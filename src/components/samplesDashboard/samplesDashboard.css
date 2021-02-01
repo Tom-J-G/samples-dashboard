@@ -1,0 +1,221 @@
+#dashboard {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.334;
+}
+
+#dashboard h1 {
+    margin-bottom: 2rem;
+}
+
+.sample-check {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.sample-check .warning {
+    color: var(--warning-color);
+}
+
+/* Top card */
+.sample-info {
+    width: 100%;
+    padding: 1.8rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sample-info .amount {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.sample-info .amount.two {
+    color: var(--second-color);
+}
+
+.sample-info .amount h3 {
+    font-size: 1rem;
+}
+
+.sample-info .info {
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+/* bottom dashboard */
+#dashboard .bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    flex: 1
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(26,54,126,0.125);
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    height: 3.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .88rem;
+}
+
+.card-header h3 {
+    font-size: 1.2rem;
+}
+
+.sample-list {
+    padding: .75rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sample-data {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.1rem 1.25rem;
+}
+
+.sample-data div {
+    text-align: right;
+    padding: 0.4rem 0;
+}
+
+.sample-data div:first-child {
+    margin-right: auto;
+    text-align: left;
+}
+
+.sample-data.top {
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    padding: 0.3rem 1.25rem;
+}
+
+.sample-data .source {
+    width: 62px;
+}
+
+.sample-data .expiry {
+    padding-right: 0.8rem;
+}
+
+.sample-data.warning .expiry {
+    color: var(--warning-color) !important;
+} 
+
+.sample-data.blue {
+    background-color: var(--third-color);
+}
+
+.samples-total {
+    text-align: center;
+    color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.samples-total .sum {
+    flex-grow: 1;
+    font-size: 6rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.samples-total .total-button {
+    width: 100%;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(26,54,126,0.125);
+}
+
+.samples-total button {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 1.5rem;
+    background-color: var(--second-color);
+    color: var(--main-bg-color);
+    cursor: pointer
+}
+
+/* error or loading */
+.error-load {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex:1;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1398px) {
+    .bottom {
+        flex-flow: row wrap;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #dashboard h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    .sample-info .amount h3 {
+        font-size: 0.85rem;
+    }
+
+    .sample-info .amount {
+        font-size: 4rem;
+    }
+
+    /* samples-data */
+    .sample-data, .sample-data.top {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sample-check {
+        font-size: 1.2rem;
+    }
+
+    .sample-info {
+        flex-flow: row wrap;
+        padding: 0.7rem 0;
+    }
+    .sample-info .amount {
+        flex-basis: 100%;
+        padding: 0;
+        padding-top: 1rem;
+        font-size: 4.5rem;
+    }
+
+    .sample-info .amount h3 {
+        font-size: 0.95rem;
+    }
+
+    /* samples-data */
+    .sample-data, .sample-data.top {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}

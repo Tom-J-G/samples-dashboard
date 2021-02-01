@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import './index.css';
+
+//Context
+import {SamplesProvider} from './hooks/samplesContext'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SamplesProvider>
+      <App />
+    </SamplesProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
