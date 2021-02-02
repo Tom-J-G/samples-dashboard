@@ -1,4 +1,4 @@
-##Samples Dashboard
+## Samples Dashboard
 
 I initially got the api working and then checked to see what information I could use. My aim was to provide possible ideas that could be used for the dashboard even if some changes may need to happen in the back end.
 
